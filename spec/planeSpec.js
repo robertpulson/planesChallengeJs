@@ -13,7 +13,7 @@ describe('plane', function() {
 
   it('can take off', function() {
     plane.land();
-    plane.takeoff();
+    plane.takeOff();
     expect(plane.isFlying).toBe(true);
   });
 
