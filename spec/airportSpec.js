@@ -1,8 +1,9 @@
 describe('Airport', function() {
-  var airport = new Airport;
+  var airport
   var plane;
 
   beforeEach(function() {
+    airport = new Airport();
     plane = jasmine.createSpyObj('plane', ['land', 'takeOff', 'isFlying']);
   });
 
@@ -15,8 +16,9 @@ describe('Airport', function() {
 
     it('knows how many planes it contains', function() {
       airport.confirmLand(plane);
-      expect(airport.planesCount).toEqual(1);
+      expect(airport.planes.length).toEqual(1);
     });
+
   });
 
 });
