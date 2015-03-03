@@ -6,9 +6,15 @@ describe('plane', function() {
     expect(plane.isFlying).toBe(true);
   });
 
-  it('can land', function(){
-    plane.land
-    expect(plane.isFlying).toBe(false)
+  it('can land', function() {
+    plane.land();
+    expect(plane.isFlying).toBe(false);
+  });
+
+  it('can take off', function() {
+    plane.land();
+    plane.takeoff();
+    expect(plane.isFlying).toBe(true);
   });
 
 });
