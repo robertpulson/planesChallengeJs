@@ -2,8 +2,7 @@
 
 An exercise in Object Oriented Programming with Javascript.
 
-This is a revisit of planes_challenge, which can be found at: https://github.com/robertpulson/planes_challenge
-This time using JavaScript.
+This is a revisit of [planes_challenge](https://github.com/robertpulson/planes_challenge), this time using JavaScript.
 
 # Key Learning Areas
 
